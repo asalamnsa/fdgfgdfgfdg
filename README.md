@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-A live demo of the project is available at [https://doodstream-web.pages.dev](https://doodstream-web.pages.dev/).
+A live demo of the project is available at [https://AGC-web.pages.dev](https://AGC-web.pages.dev/).
 
 ## Configuration
 
@@ -25,8 +25,8 @@ The following environment variables are required to run the project:
 1. Clone the repository
 
 ```bash
-git clone <repo-url> doodstream-web
-cd doodstream-web
+git clone <repo-url> AGC-web
+cd AGC-web
 ```
 
 2. Install dependencies
@@ -48,8 +48,8 @@ npm run dev
 1. Clone the repository
 
 ```bash
-git clone <repo-url> doodstream-web
-cd doodstream-web
+git clone <repo-url> AGC-web
+cd AGC-web
 ```
 
 2. Install dependencies
@@ -74,12 +74,12 @@ npm run start
 
 ## Deployment on Cloudflare Pages
 
-1. Fork the [repository](https://github.com/viperadnan-git/doodstream-web/fork) on GitHub.
+1. Fork the [repository]on GitHub.
 2. Create a new project on [Cloudflare Pages](https://pages.cloudflare.com/).
 3. Connect your GitHub account with Cloudflare Pages.
 4. Select the forked repository and click on `Begin Setup`.
 5. Select `nextjs` as the build preset.
-6. Add required environment variables (`DOODSTREAM_API_KEY`).
+6. Add required environment variables (`AGC_API_KEY`).
 7. Click on `Save and Deploy` to start the deployment. This first deployment will not be fully functional as the next step is also necessary.
 8. In your Pages project, go to Settings > Functions > Compatibility Flags.
 9. Configure a nodejs_compat flag for both production and preview.
@@ -94,7 +94,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Disclaimer
 
-This project is not affiliated with https://doodstream.com in any way. It is just a frontend for their API.
+This project is not affiliated with https://AGC.com in any way. It is just a frontend for their API.
 
 ## License
 
