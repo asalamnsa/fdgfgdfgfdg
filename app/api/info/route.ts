@@ -11,17 +11,18 @@ export async function GET(request: Request) {
   const fileCode = searchParams.get("file_code")
 
   if (!fileCode) {
-    const errorResponse = NextResponse.json({ error: "file_code is required" }, { status: 400 })
+    const errorResponse = NextResponse.json({ error: "file_code is required" }, { status: 400 });
+    return setCorsHeaders(errorResponse);
     return setCorsHeaders(errorResponse)
   }
 
   try {
     const data = await fetchDataWithCache()
 
-    const fileInfo = data.find((file: any) => file.file_code === fileCode)
+    const fileInfo = data.find((file: any) => file.file_code === fileCode);
 
     if (!fileInfo) {
-      const notFoundResponse = NextResponse.json({ error: "File not found" }, { status: 404 })
+      const notFoundResponse = NextResponse.json({ error: "File not found. Please check the file_code." }, { status: 404 });
       return setCorsHeaders(notFoundResponse)
     }
 
